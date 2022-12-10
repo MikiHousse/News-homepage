@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
   <link rel="stylesheet" href="./css/style.css">
 
@@ -30,58 +31,67 @@
   </header>
   <main class="container mx-auto pt-12">
     <section class="grid grid-cols-6 gap-8">
-      <div class="grid col-start-1 col-end-5 grid-rows-2 grid-cols-2 gap-8">
-        <img class="col-span-2" src="./assets/images/image-web-3-desktop.jpg" width="1000" height="230" alt="">
-        <p class="font-bold text-5xl">The Bright <br> Future <br> of Web 3.0?</p>
+      <div class="grid col-start-1 col-end-5 grid-rows-3 grid-cols-2 gap-4">
+        <img class="col-span-2 row-span-2" src="./assets/images/image-web-3-desktop.jpg" width="1000" height="350" alt="">
+        <p class="font-bold text-7xl">The Bright <br> Future <br> of Web 3.0?</p>
         <div>
-          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          <p class="text-2xl text-castomDark">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
             But is it really fulfilling its promise?</p>
-            <a class="inline-block text-white bg-red-400 py-2 px-8 uppercase" href="#">Read more</a>
+            <a class="inline-block text-white bg-red-400 py-3 px-10 uppercase mt-10" href="#">Read more</a>
         </div>
       </div>
       <div class="col-start-5 col-end-7 bg-black">
-        <h2>New</h2>
-        <ul class="text-white">
-          <li>
-            <p>Hydrogen VS Electric Cars</p>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <h2 class="text-orange-400 m-10 font-bold text-5xl">New</h2>
+        <ul class="m-10 text-white">
+          <li class="">
+            <p class="font-bold text-3xl">Hydrogen VS Electric Cars</p>
+            <p class="text-2xl text-castomDark">Will hydrogen-fueled cars ever catch up to EVs?</p>
           </li>
-          <li>
-            <p>The Downsides of AI Artistry</p>
-            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          <hr class="mb-10 mt-10 bg-castomDark">
+          <li class="">
+            <p class="font-bold text-3xl">The Downsides of AI Artistry</p>
+            <p class="text-2xl text-castomDark">What are the possible adverse effects of on-demand AI image generation?</p>
           </li>
-          <li>
-            <p>Is VC Funding Drying Up?</p>
-            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          <hr class="mt-10 mb-10 bg-castomDark">
+          <li class="">
+            <p class="font-bold text-3xl">Is VC Funding Drying Up?</p>
+            <p class="text-2xl text-castomDark">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
           </li>
         </ul>
       </div>
     </section>
+    <section class="container mx-auto pt-12">
+      <ul class="flex">
+        <li class="grid grid-cols-3 gap-6 mr-10">
+          <img src="./assets/images/image-retro-pcs.jpg" width="154" height="170" alt="">
+          <div class="col-span-2">
+            <span class="font-bold text-5xl text-castomGray">01</span>
+            <h3 class="font-bold text-2xl mb-4 mt-4">Reviving Retro PCs</h3>
+            <p class="text-xl text-castomDark">What happens when old PCs <br> are given modern upgrades?</p>
+          </div>
+        </li>
+        <li class="grid grid-cols-3 gap-6 mr-8">
+          <img src="./assets/images/image-top-laptops.jpg" width="154" height="170" alt="">
+          <div class="col-span-2">
+            <span class="font-bold text-5xl text-castomGray">02</span>
+            <h3 class="font-bold text-2xl mb-4 mt-4">Top 10 Laptops of 2022</h3>
+            <p class="text-xl text-castomDark">Our best picks for various <br> needs and budgets.</p>
+          </div>
+        </li>
+        <li class="grid grid-cols-3 gap-6">
+          <img class="pl-12" src="./assets/images/image-gaming-growth.jpg" width="179" height="170" alt="">
+          <div class="col-span-2">
+            <span class="font-bold text-5xl text-castomGray">03</span>
+            <h3 class="font-bold text-2xl mb-4 mt-4">The Growth of Gaming</h3>
+            <p class="text-xl text-castomDark">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
   </main>
-  
-  
-  
-  
-  
-
-
-  
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

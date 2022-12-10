@@ -10,6 +10,9 @@ module.exports = {
         castomVeryDark: 'hsl(240, 100%, 5%)'
       }
     },
+    // screens: {
+    //   'se': {'max': '375px'}
+    // }
   },
   plugins: [],
 }
