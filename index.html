@@ -17,17 +17,40 @@
   </style>
 </head>
 <body>
-  <header class="container mx-auto pt-12">
-    <nav class="flex justify-between ">
-      <img src="./assets/images/logo.svg" alt="">
-      <ul class="flex justify-end text-castomDark">
-        <li class="pr-10">Home</li>
-        <li class="pr-10">New</li>
-        <li class="pr-10">Popular</li>
-        <li class="pr-10">Trending</li>
-        <li class="pr-10">Categories</li>
-      </ul>
-    </nav>
+  <header class="relative">
+    <div class="container">
+      <nav class="flex justify-between pt-20 sm:pt-12">
+        <a href="#"><img src="./assets/images/logo.svg" alt=""></a>
+        <ul class="flex gap-10 sm:hidden text-castomDark">
+          <li><a href="#" class="hover:text-red-500 transition-colors text-2xl lg:text-base">Home</a></li>
+          <li><a href="#" class="hover:text-red-500 transition-colors text-2xl lg:text-base">New</a></li>
+          <li><a href="#" class="hover:text-red-500 transition-colors text-2xl lg:text-base">Popular</a></li>
+          <li><a href="#" class="hover:text-red-500 transition-colors text-2xl lg:text-base">Trending</a></li>
+          <li><a href="#" class="hover:text-red-500 transition-colors text-2xl lg:text-base">Categories</a></li>
+        </ul>
+  
+        <div id="menu" class="hidden absolute left-40 right-12 top-32 bg-white flex-col place-items-end z-10">
+          <div>
+            <nav>
+              <ul > 
+                <li><a href="#" class="py-4 text-black">Home</a></li>
+                <li><a href="#" class="py-4 text-black">New</a></li>
+                <li><a href="#" class="py-4 text-black">Popular</a></li>
+                <li><a href="#" class="py-4 text-black">Trending</a></li>
+                <li><a href="#" class="py-4 text-black">Categories</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="burger-overlay hidden top-auto right-52 absolute w-64 h-full bg-black opacity-75"></div>
+        </div>
+  
+        <button class="burger hidden sm:block z-10">
+          <span class="burger-line top-line"></span>
+          <span class="burger-line mid-line"></span>
+          <span class="burger-line bottom-line"></span>
+        </button>
+      </nav>
+    </div>
   </header>
   <main class="container mx-auto pt-12">
     <section class="grid grid-cols-6 gap-8">
@@ -40,7 +63,7 @@
             <a class="inline-block text-white bg-red-400 py-3 px-10 uppercase mt-10" href="#">Read more</a>
         </div>
       </div>
-      <div class="col-start-5 col-end-7 bg-black">
+      <!-- <div class="col-start-5 col-end-7 bg-black">
         <h2 class="text-orange-400 m-10 font-bold text-5xl">New</h2>
         <ul class="m-10 text-white">
           <li class="">
@@ -58,9 +81,9 @@
             <p class="text-2xl text-castomDark">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
           </li>
         </ul>
-      </div>
+      </div> -->
     </section>
-    <section class="container mx-auto pt-12">
+    <!-- <section class="container mx-auto pt-12">
       <ul class="flex">
         <li class="grid grid-cols-3 gap-6 mr-10">
           <img src="./assets/images/image-retro-pcs.jpg" width="154" height="170" alt="">
@@ -87,11 +110,12 @@
           </div>
         </li>
       </ul>
-    </section>
+    </section> -->
   </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src=".//js/main.js"></script>
 </body>
 </html>
