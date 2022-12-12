@@ -52,65 +52,72 @@
       </nav>
     </div>
   </header>
-  <main class="container mx-auto pt-12">
-    <section class="grid grid-cols-6 gap-8">
-      <div class="grid col-start-1 col-end-5 grid-rows-3 grid-cols-2 gap-4">
-        <img class="col-span-2 row-span-2" src="./assets/images/image-web-3-desktop.jpg" width="1000" height="350" alt="">
-        <p class="font-bold text-7xl">The Bright <br> Future <br> of Web 3.0?</p>
-        <div>
-          <p class="text-2xl text-castomDark">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-            But is it really fulfilling its promise?</p>
-            <a class="inline-block text-white bg-red-400 py-3 px-10 uppercase mt-10" href="#">Read more</a>
+  <main class="container pt-12">
+    <section class="flex gap-10 sm:flex-col">
+      <div class="max-w-[910px] sm:flex-col">
+        <div class="sm:hidden">
+          <img class="" src="./assets/images/image-web-3-desktop.jpg" width="1000" height="350" alt="">
+        </div>
+        <div class="hidden sm:block">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+        </div>
+        <div class="flex gap-12 pt-8 sm:flex-col sm:gap-6 sm:pt-0">
+          <p class="font-bold text-7xl min-w-[400px] sm:min-w-[375px] sm:text-5xl sm:pt-8">The Bright <br> Future of Web 3.0?</p>
+          <div class="">
+            <p class="text-xl text-castomDark">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+            <a class="inline-block text-white bg-red-400 py-3 px-8 uppercase mt-14" href="#">Read more</a>
+          </div>
         </div>
       </div>
-      <!-- <div class="col-start-5 col-end-7 bg-black">
-        <h2 class="text-orange-400 m-10 font-bold text-5xl">New</h2>
-        <ul class="m-10 text-white">
+      <div class="max-w-[450px] bg-black">
+        <h2 class="text-orange-400 mt-12 mx-8 font-bold text-5xl">New</h2>
+        <ul class="m-8 text-white">
           <li class="">
-            <p class="font-bold text-3xl">Hydrogen VS Electric Cars</p>
-            <p class="text-2xl text-castomDark">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <p class="font-bold text-2xl mb-4">Hydrogen VS Electric Cars</p>
+            <p class="text-xl text-castomGray">Will hydrogen-fueled cars ever catch up to EVs?</p>
           </li>
-          <hr class="mb-10 mt-10 bg-castomDark">
+          <hr class="mb-8 mt-8 bg-castomDark">
           <li class="">
-            <p class="font-bold text-3xl">The Downsides of AI Artistry</p>
-            <p class="text-2xl text-castomDark">What are the possible adverse effects of on-demand AI image generation?</p>
+            <p class="font-bold text-2xl mb-4">The Downsides of AI Artistry</p>
+            <p class="text-xl text-castomGray">What are the possible adverse effects of on-demand AI image generation?</p>
           </li>
-          <hr class="mt-10 mb-10 bg-castomDark">
+          <hr class="mt-8 mb-8 bg-castomDark">
           <li class="">
-            <p class="font-bold text-3xl">Is VC Funding Drying Up?</p>
-            <p class="text-2xl text-castomDark">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            <p class="font-bold text-2xl mb-4">Is VC Funding Drying Up?</p>
+            <p class="text-xl text-castomGray">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
           </li>
         </ul>
-      </div> -->
+      </div>
     </section>
-    <!-- <section class="container mx-auto pt-12">
-      <ul class="flex">
-        <li class="grid grid-cols-3 gap-6 mr-10">
+    <section class="container p-0 pt-12">
+      <ul class="flex gap-8 sm:flex-col">
+        <li class="flex-1 grid grid-cols-3 gap-6">
           <img src="./assets/images/image-retro-pcs.jpg" width="154" height="170" alt="">
           <div class="col-span-2">
-            <span class="font-bold text-5xl text-castomGray">01</span>
-            <h3 class="font-bold text-2xl mb-4 mt-4">Reviving Retro PCs</h3>
-            <p class="text-xl text-castomDark">What happens when old PCs <br> are given modern upgrades?</p>
+            <span class="font-bold text-6xl text-castomGray sm:text-3xl">01</span>
+            <h3 class="font-bold text-2xl mb-4 mt-4 sm:text-lg sm:mb-2 sm:mt-2">Reviving Retro PCs</h3>
+            <p class="text-xl text-castomDark sm:text-sm">What happens when old PCs are given modern upgrades?</p>
           </div>
         </li>
-        <li class="grid grid-cols-3 gap-6 mr-8">
+        <li class="flex-1 grid grid-cols-3 gap-6">
           <img src="./assets/images/image-top-laptops.jpg" width="154" height="170" alt="">
           <div class="col-span-2">
-            <span class="font-bold text-5xl text-castomGray">02</span>
-            <h3 class="font-bold text-2xl mb-4 mt-4">Top 10 Laptops of 2022</h3>
-            <p class="text-xl text-castomDark">Our best picks for various <br> needs and budgets.</p>
+            <span class="font-bold text-6xl text-castomGray sm:text-3xl">02</span>
+            <h3 class="font-bold text-2xl mb-4 mt-4 sm:text-lg sm:mb-2 sm:mt-2">Top 10 Laptops of 2022</h3>
+            <p class="text-xl text-castomDark sm:text-sm">Our best picks for various needs and budgets.</p>
           </div>
         </li>
-        <li class="grid grid-cols-3 gap-6">
-          <img class="pl-12" src="./assets/images/image-gaming-growth.jpg" width="179" height="170" alt="">
+        <li class="flex-1 grid grid-cols-3 gap-6">
+          <img src="./assets/images/image-gaming-growth.jpg" width="154" height="170" alt="">
           <div class="col-span-2">
-            <span class="font-bold text-5xl text-castomGray">03</span>
-            <h3 class="font-bold text-2xl mb-4 mt-4">The Growth of Gaming</h3>
-            <p class="text-xl text-castomDark">How the pandemic has sparked fresh opportunities.</p>
+            <span class="font-bold text-6xl text-castomGray sm:text-3xl">03</span>
+            <h3 class="font-bold text-2xl mb-4 mt-4 sm:text-lg sm:mb-2 sm:mt-2">The Growth of Gaming</h3>
+            <p class="text-xl text-castomDark sm:text-sm">How the pandemic has sparked fresh opportunities.</p>
           </div>
         </li>
       </ul>
-    </section> -->
+    </section>
   </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
